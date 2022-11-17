@@ -1470,6 +1470,11 @@
     (uuid f78b45d9-0694-4ed9-9932-9aa96a8cac30)
   )
 
+  (label "COMP_VCC" (at 190.5 55.88 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 61b00aa8-32ec-4b62-87d9-090207c59656)
+  )
+
   (global_label "OFF_BTN-" (shape bidirectional) (at 148.59 110.49 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 21c42bec-5638-44d9-ae98-ec722be50ac0)
