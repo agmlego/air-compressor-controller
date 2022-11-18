@@ -830,37 +830,29 @@
         )
       )
     )
-    (symbol "Diode:1N4148" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
+    (symbol "Diode:PMEG3020EJ" (pin_numbers hide) (pin_names hide) (in_bom yes) (on_board yes)
       (property "Reference" "D" (id 0) (at 0 2.54 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Value" "1N4148" (id 1) (at 0 -2.54 0)
+      (property "Value" "PMEG3020EJ" (id 1) (at 0 -2.54 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (id 2) (at 0 -4.445 0)
+      (property "Footprint" "Diode_SMD:D_SOD-323F" (id 2) (at 0 -4.445 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" (id 3) (at 0 0 0)
+      (property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PMEG3020EH_EJ.pdf" (id 3) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_keywords" "diode" (id 4) (at 0 0 0)
+      (property "ki_keywords" "forward voltage diode" (id 4) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "100V 0.15A standard switching diode, DO-35" (id 5) (at 0 0 0)
+      (property "ki_description" "30V, 2A ultra low Vf MEGA Schottky barrier rectifier, SOD-323F" (id 5) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_fp_filters" "D*DO?35*" (id 6) (at 0 0 0)
+      (property "ki_fp_filters" "D*SOD?323F*" (id 6) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "1N4148_0_1"
-        (polyline
-          (pts
-            (xy -1.27 1.27)
-            (xy -1.27 -1.27)
-          )
-          (stroke (width 0.254) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
+      (symbol "PMEG3020EJ_0_1"
         (polyline
           (pts
             (xy 1.27 0)
@@ -876,11 +868,23 @@
             (xy -1.27 0)
             (xy 1.27 1.27)
           )
-          (stroke (width 0.254) (type default) (color 0 0 0 0))
+          (stroke (width 0.2032) (type default) (color 0 0 0 0))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -1.905 0.635)
+            (xy -1.905 1.27)
+            (xy -1.27 1.27)
+            (xy -1.27 -1.27)
+            (xy -0.635 -1.27)
+            (xy -0.635 -0.635)
+          )
+          (stroke (width 0.2032) (type default) (color 0 0 0 0))
           (fill (type none))
         )
       )
-      (symbol "1N4148_1_1"
+      (symbol "PMEG3020EJ_1_1"
         (pin passive line (at -3.81 0 0) (length 2.54)
           (name "K" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
@@ -2353,7 +2357,7 @@
     (property "Reference" "C7" (id 0) (at 226.441 89.2615 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "0.1uF" (id 1) (at 226.06 92.71 0)
+    (property "Value" "0.1µF" (id 1) (at 226.06 92.71 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (id 2) (at 224.4852 93.98 0)
@@ -2388,7 +2392,7 @@
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 31a0d5d3-32e0-40ee-87e6-47f4fc1c586b)
     (property "Reference" "R2" (id 0) (at 53.34 48.3575 90))
-    (property "Value" "2.2K" (id 1) (at 53.34 51.1326 90))
+    (property "Value" "2K2" (id 1) (at 53.34 51.1326 90))
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (id 2) (at 53.34 55.118 90)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -2617,7 +2621,7 @@
     (property "Reference" "C6" (id 0) (at 218.821 33.3815 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "0.1uF" (id 1) (at 218.821 36.1566 0)
+    (property "Value" "0.1µF" (id 1) (at 218.821 36.1566 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (id 2) (at 216.8652 38.1 0)
@@ -2739,7 +2743,7 @@
     (property "Reference" "R7" (id 0) (at 243.078 68.9415 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "4.7K" (id 1) (at 243.078 71.7166 0)
+    (property "Value" "4K7" (id 1) (at 243.078 71.7166 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (id 2) (at 239.522 69.85 90)
@@ -2758,7 +2762,7 @@
     (property "Reference" "C1" (id 0) (at 20.701 58.7815 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "10uF" (id 1) (at 20.701 61.5566 0)
+    (property "Value" "10µF" (id 1) (at 20.701 61.5566 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Capacitor_SMD:CP_Elec_4x4.5" (id 2) (at 18.7452 63.5 0)
@@ -2926,15 +2930,15 @@
     (pin "1" (uuid a91c8220-cf85-454f-9e57-e55f5f9588f0))
   )
 
-  (symbol (lib_id "Diode:1N4148") (at 59.69 90.17 0) (unit 1)
+  (symbol (lib_id "Diode:PMEG3020EJ") (at 59.69 90.17 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 80f40cd3-3dd6-4fda-ab23-34437169944e)
     (property "Reference" "D3" (id 0) (at 59.69 83.82 0))
-    (property "Value" "SK34A" (id 1) (at 59.69 86.36 0))
-    (property "Footprint" "Diode_SMD:D_SMA_Handsoldering" (id 2) (at 59.69 94.615 0)
+    (property "Value" "PMEG3020EJ" (id 1) (at 59.69 92.71 0))
+    (property "Footprint" "Diode_SMD:D_SOD-323F" (id 2) (at 59.69 94.615 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" (id 3) (at 59.69 90.17 0)
+    (property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PMEG3020EH_EJ.pdf" (id 3) (at 59.69 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 1a55d622-e98e-45d9-a28d-46a95fcb87d4))
@@ -3047,7 +3051,7 @@
     (property "Reference" "R4" (id 0) (at 185.42 85.0899 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "4.7K" (id 1) (at 185.42 87.6299 0)
+    (property "Value" "4K7" (id 1) (at 185.42 87.6299 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (id 2) (at 181.102 86.36 90)
@@ -3270,7 +3274,7 @@
     (property "Reference" "C3" (id 0) (at 48.641 60.0515 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "22uF" (id 1) (at 48.641 62.8266 0)
+    (property "Value" "22µF" (id 1) (at 48.641 62.8266 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Capacitor_SMD:CP_Elec_4x4.5" (id 2) (at 46.6852 64.77 0)
@@ -3289,7 +3293,7 @@
     (property "Reference" "C8" (id 0) (at 260.731 77.8315 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "0.1uF" (id 1) (at 260.731 80.6066 0)
+    (property "Value" "0.1µF" (id 1) (at 260.731 80.6066 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (id 2) (at 258.7752 82.55 0)
@@ -3372,7 +3376,7 @@
     (property "Reference" "C2" (id 0) (at 47.371 30.8415 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "10uF" (id 1) (at 47.371 33.6166 0)
+    (property "Value" "10µF" (id 1) (at 47.371 33.6166 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Capacitor_SMD:CP_Elec_4x4.5" (id 2) (at 45.4152 35.56 0)
@@ -3475,7 +3479,7 @@
     (property "Reference" "R1" (id 0) (at 33.02 24.1299 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "2.2K" (id 1) (at 33.02 26.6699 0)
+    (property "Value" "2K2" (id 1) (at 33.02 26.6699 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (id 2) (at 32.258 25.4 90)
@@ -3492,7 +3496,7 @@
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid fcb3c99c-615c-4ff5-98cb-32237e3e94bc)
     (property "Reference" "R3" (id 0) (at 77.47 16.6075 90))
-    (property "Value" "2.2K" (id 1) (at 77.47 19.3826 90))
+    (property "Value" "2K2" (id 1) (at 77.47 19.3826 90))
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (id 2) (at 77.47 23.368 90)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -3885,13 +3889,13 @@
       (reference "B_OPEN1") (unit 1) (value "GREEN LED") (footprint "LED_SMD:LED_0603_1608Metric")
     )
     (path "/677953ee-16af-428e-a462-78d8c134bfe9"
-      (reference "C1") (unit 1) (value "10uF") (footprint "Capacitor_SMD:CP_Elec_4x4.5")
+      (reference "C1") (unit 1) (value "10µF") (footprint "Capacitor_SMD:CP_Elec_4x4.5")
     )
     (path "/d7ca81a9-afef-48a1-b9ab-11af4af2488d"
-      (reference "C2") (unit 1) (value "10uF") (footprint "Capacitor_SMD:CP_Elec_4x4.5")
+      (reference "C2") (unit 1) (value "10µF") (footprint "Capacitor_SMD:CP_Elec_4x4.5")
     )
     (path "/c151a1ea-cc19-46ed-962e-ddc8e91bd04b"
-      (reference "C3") (unit 1) (value "22uF") (footprint "Capacitor_SMD:CP_Elec_4x4.5")
+      (reference "C3") (unit 1) (value "22µF") (footprint "Capacitor_SMD:CP_Elec_4x4.5")
     )
     (path "/57831c8f-ffca-480d-9a9f-1959f735e833"
       (reference "C4") (unit 1) (value "1nF") (footprint "Capacitor_SMD:C_0603_1608Metric")
@@ -3900,19 +3904,19 @@
       (reference "C5") (unit 1) (value "4.7μF") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/55aee459-b20b-41cb-bd02-5fae4d38ba45"
-      (reference "C6") (unit 1) (value "0.1uF") (footprint "Capacitor_SMD:C_0603_1608Metric")
+      (reference "C6") (unit 1) (value "0.1µF") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/296e10b4-8891-4ef1-a130-5e4381b37925"
-      (reference "C7") (unit 1) (value "0.1uF") (footprint "Capacitor_SMD:C_0603_1608Metric")
+      (reference "C7") (unit 1) (value "0.1µF") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/c432907e-4b88-493f-9db6-aac88739feef"
-      (reference "C8") (unit 1) (value "0.1uF") (footprint "Capacitor_SMD:C_0603_1608Metric")
+      (reference "C8") (unit 1) (value "0.1µF") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/da972604-319b-4182-9d30-1557a5e8bead/dafec4ab-31cf-496d-8266-d91b894c3100"
-      (reference "C9") (unit 1) (value "0.1uF") (footprint "Capacitor_SMD:C_0603_1608Metric")
+      (reference "C9") (unit 1) (value "0.1µF") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/da972604-319b-4182-9d30-1557a5e8bead/e86c7016-cec4-4a98-b404-0431b5695bfc"
-      (reference "C10") (unit 1) (value "0.1uF") (footprint "Capacitor_SMD:C_0603_1608Metric")
+      (reference "C10") (unit 1) (value "0.1µF") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/89eeb776-9efa-4aa7-ad33-643ebd033b3f/a18df397-7806-4fa4-8db4-ef939368667d"
       (reference "C11") (unit 1) (value "4.7μF") (footprint "Capacitor_SMD:C_0603_1608Metric")
@@ -3933,13 +3937,37 @@
       (reference "COMP_TX_LED1") (unit 1) (value "GREEN LED") (footprint "LED_SMD:LED_0603_1608Metric")
     )
     (path "/89eeb776-9efa-4aa7-ad33-643ebd033b3f/a002300e-feb8-4606-9dc7-b914fefd79c9"
-      (reference "D1") (unit 1) (value "SK34A") (footprint "Diode_SMD:D_SMA_Handsoldering")
+      (reference "D1") (unit 1) (value "PMEG3020EJ") (footprint "Diode_SMD:D_SOD-323F")
     )
     (path "/89eeb776-9efa-4aa7-ad33-643ebd033b3f/98b418f4-f0b4-4bc4-ad3d-68fb9132092f"
-      (reference "D2") (unit 1) (value "SK34A") (footprint "Diode_SMD:D_SMA_Handsoldering")
+      (reference "D2") (unit 1) (value "PMEG3020EJ") (footprint "Diode_SMD:D_SOD-323F")
     )
     (path "/80f40cd3-3dd6-4fda-ab23-34437169944e"
-      (reference "D3") (unit 1) (value "SK34A") (footprint "Diode_SMD:D_SMA_Handsoldering")
+      (reference "D3") (unit 1) (value "PMEG3020EJ") (footprint "Diode_SMD:D_SOD-323F")
+    )
+    (path "/da972604-319b-4182-9d30-1557a5e8bead/6f24fd8c-514c-4f00-bf0f-a6673f1d41db"
+      (reference "D4") (unit 1) (value "PMEG3020EJ") (footprint "Diode_SMD:D_SOD-323F")
+    )
+    (path "/da972604-319b-4182-9d30-1557a5e8bead/22e9e785-b308-4cb0-90f6-1d326a8e569a"
+      (reference "D5") (unit 1) (value "PMEG3020EJ") (footprint "Diode_SMD:D_SOD-323F")
+    )
+    (path "/da972604-319b-4182-9d30-1557a5e8bead/f1ed7f5b-58b8-4eb0-ab33-e28130c9d486"
+      (reference "D6") (unit 1) (value "PMEG3020EJ") (footprint "Diode_SMD:D_SOD-323F")
+    )
+    (path "/da972604-319b-4182-9d30-1557a5e8bead/715bdf32-acdb-4cc3-8125-741167a1bf6a"
+      (reference "D7") (unit 1) (value "PMEG3020EJ") (footprint "Diode_SMD:D_SOD-323F")
+    )
+    (path "/da972604-319b-4182-9d30-1557a5e8bead/7842e469-ae0c-44a2-a3a7-a18622c9b621"
+      (reference "D8") (unit 1) (value "PMEG3020EJ") (footprint "Diode_SMD:D_SOD-323F")
+    )
+    (path "/da972604-319b-4182-9d30-1557a5e8bead/5d86a166-dfec-4a8f-83c8-b65bd95eac4c"
+      (reference "D9") (unit 1) (value "PMEG3020EJ") (footprint "Diode_SMD:D_SOD-323F")
+    )
+    (path "/da972604-319b-4182-9d30-1557a5e8bead/c7b9dee1-c397-4256-8ffd-f04e9b638f2f"
+      (reference "D10") (unit 1) (value "PMEG3020EJ") (footprint "Diode_SMD:D_SOD-323F")
+    )
+    (path "/da972604-319b-4182-9d30-1557a5e8bead/82e233c1-c30d-44aa-8a3c-df7fd220e231"
+      (reference "D11") (unit 1) (value "PMEG3020EJ") (footprint "Diode_SMD:D_SOD-323F")
     )
     (path "/486b1a11-4906-4e63-b9f1-6a53fddeccde/079b7a41-be37-4d60-bcfd-db8d613ae836"
       (reference "GREEN_STACK1") (unit 1) (value "GREEN LED") (footprint "LED_SMD:LED_0603_1608Metric")
@@ -4002,16 +4030,16 @@
       (reference "Q5") (unit 1) (value "AO3400A") (footprint "Package_TO_SOT_SMD:SOT-23")
     )
     (path "/f89fc18d-1fed-4480-a160-6fa9e36a7d0d"
-      (reference "R1") (unit 1) (value "2.2K") (footprint "Resistor_SMD:R_0603_1608Metric")
+      (reference "R1") (unit 1) (value "2K2") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/31a0d5d3-32e0-40ee-87e6-47f4fc1c586b"
-      (reference "R2") (unit 1) (value "2.2K") (footprint "Resistor_SMD:R_0603_1608Metric")
+      (reference "R2") (unit 1) (value "2K2") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/fcb3c99c-615c-4ff5-98cb-32237e3e94bc"
-      (reference "R3") (unit 1) (value "2.2K") (footprint "Resistor_SMD:R_0603_1608Metric")
+      (reference "R3") (unit 1) (value "2K2") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/94f0b6b3-d5fd-43fc-8247-821e76fb07f9"
-      (reference "R4") (unit 1) (value "4.7K") (footprint "Resistor_SMD:R_0603_1608Metric")
+      (reference "R4") (unit 1) (value "4K7") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/7adbe11b-c1cd-46c4-867e-7e496100e421"
       (reference "R5") (unit 1) (value "10K") (footprint "Resistor_SMD:R_0603_1608Metric")
@@ -4020,7 +4048,7 @@
       (reference "R6") (unit 1) (value "10K") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/644b3773-f348-462a-9e15-5723bd3cb6ee"
-      (reference "R7") (unit 1) (value "4.7K") (footprint "Resistor_SMD:R_0603_1608Metric")
+      (reference "R7") (unit 1) (value "4K7") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/b47bfa65-d9c1-4c39-bf58-b833481d063b"
       (reference "R8") (unit 1) (value "10K") (footprint "Resistor_SMD:R_0603_1608Metric")
@@ -4065,22 +4093,22 @@
       (reference "R21") (unit 1) (value "10K") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/da972604-319b-4182-9d30-1557a5e8bead/d82b2cef-78a7-40a4-ac1f-17386ebc89c0"
-      (reference "R22") (unit 1) (value "2.2K") (footprint "Resistor_SMD:R_0603_1608Metric")
+      (reference "R22") (unit 1) (value "2K2") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/da972604-319b-4182-9d30-1557a5e8bead/09a83bf2-cbed-4f40-aef3-6b3523510950"
-      (reference "R23") (unit 1) (value "2.2K") (footprint "Resistor_SMD:R_0603_1608Metric")
+      (reference "R23") (unit 1) (value "2K2") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/da972604-319b-4182-9d30-1557a5e8bead/7d7baf8d-83cd-4300-a59a-72da204be889"
-      (reference "R24") (unit 1) (value "2.2K") (footprint "Resistor_SMD:R_0603_1608Metric")
+      (reference "R24") (unit 1) (value "2K2") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/da972604-319b-4182-9d30-1557a5e8bead/5a863022-f2b6-4807-ad0a-884378079f18"
-      (reference "R25") (unit 1) (value "2.2K") (footprint "Resistor_SMD:R_0603_1608Metric")
+      (reference "R25") (unit 1) (value "2K2") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/da972604-319b-4182-9d30-1557a5e8bead/fae62482-6a06-4b0f-94b6-ec9bb31f9757"
-      (reference "R26") (unit 1) (value "2.2K") (footprint "Resistor_SMD:R_0603_1608Metric")
+      (reference "R26") (unit 1) (value "2K2") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/da972604-319b-4182-9d30-1557a5e8bead/d65ac4b1-ba55-4ec0-ac19-54c8bbf42789"
-      (reference "R27") (unit 1) (value "2.2K") (footprint "Resistor_SMD:R_0603_1608Metric")
+      (reference "R27") (unit 1) (value "2K2") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/da972604-319b-4182-9d30-1557a5e8bead/649c3e0c-3512-474f-8838-e8409c4e5d54"
       (reference "R28") (unit 1) (value "0.5") (footprint "Resistor_SMD:R_1206_3216Metric")
@@ -4167,13 +4195,13 @@
       (reference "U6") (unit 4) (value "LTV-847S") (footprint "Package_DIP:SMDIP-16_W9.53mm")
     )
     (path "/89eeb776-9efa-4aa7-ad33-643ebd033b3f/f35f1e0b-2ff5-4503-bbb5-f796c8515a23"
-      (reference "U7") (unit 1) (value "LTV-847") (footprint "Package_DIP:DIP-16_W7.62mm_SMDSocket_SmallPads")
+      (reference "U7") (unit 1) (value "LTV-847S") (footprint "Package_DIP:SMDIP-16_W9.53mm")
     )
     (path "/da972604-319b-4182-9d30-1557a5e8bead/d693bbcd-957a-4658-9aa5-518caf2c62c3"
-      (reference "U7") (unit 3) (value "LTV-847") (footprint "Package_DIP:DIP-16_W7.62mm_SMDSocket_SmallPads")
+      (reference "U7") (unit 3) (value "LTV-847S") (footprint "Package_DIP:SMDIP-16_W9.53mm")
     )
     (path "/da972604-319b-4182-9d30-1557a5e8bead/9ec40365-94f9-464d-bcee-5835e4fc9d81"
-      (reference "U7") (unit 4) (value "LTV-847") (footprint "Package_DIP:DIP-16_W7.62mm_SMDSocket_SmallPads")
+      (reference "U7") (unit 4) (value "LTV-847S") (footprint "Package_DIP:SMDIP-16_W9.53mm")
     )
   )
 )
